@@ -8,9 +8,6 @@
 		var self = this;
 		//public variables
 		self.products = [];
-
-
-
 		self.cartItems = [{
 				productId:'1',
 				name:'Surfboard',
@@ -30,9 +27,7 @@
 				status: true,
 				image: "../assets/img/img-duffle.png"
 			}];
-		
-
-
+			
 		//public functions
 		self.getProduct = getProduct;
 		self.getProducts = getProducts;
@@ -65,7 +60,6 @@
 					console.log(res);
 					self.products.push(res.data.product);
 					console.log(self.products)
-					// state.go('admin.dash');
 				}
 			})
 		}
